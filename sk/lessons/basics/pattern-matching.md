@@ -102,6 +102,10 @@ iex> greet.("Hello", "Sean")
 "Hi Sean"
 iex> greet.("Mornin'", "Sean")
 "Mornin', Sean"
+iex> greeting
+"Hello"
 ```
 
 V príklade sme si definovali funkciu `greet` dvojitým spôsobom - ak ako prvý parameter prijme reťazec `"Hello"`, vykoná sa prvá verzia tela, inak sa použije druhá.
+
+Všimtite si, že v príklade s `"Mornin'"` prebehne priradenie `"Mornin'"` do `greeting` len vo vnútri funkcie. Mimo tejto funkcie je `greeting` stále `"Hello"`.
